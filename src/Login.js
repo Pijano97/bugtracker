@@ -16,10 +16,10 @@ function Login() {
 
 		auth
 			.signInWithEmailAndPassword(email, password)
-			.then(({ user }) => {
+			.then(({ auth }) => {
 				dispatch(
 					login({
-						user: user.email,
+						email,
 					})
 				);
 				history.push("/");
@@ -31,10 +31,10 @@ function Login() {
 		e.preventDefault();
 		auth
 			.createUserWithEmailAndPassword(email, password)
-			.then(({ user }) => {
+			.then(({ auth }) => {
 				dispatch(
 					login({
-						email: email,
+						email,
 					})
 				);
 				history.push("/");

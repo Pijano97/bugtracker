@@ -30,26 +30,22 @@ function App() {
 
 	return (
 		<Router>
-			{!user ? (
-				<Login />
-			) : (
-				<div className="app">
-					<Switch>
-						<Route path="/dashboard">
-							<Header />
-							<Sidebar />
-							<Main />
-						</Route>
-						<Route path="/logins">
-							<Login />
-						</Route>
-						<Route path="/">
-							<Header />
-							<Sidebar />
-						</Route>
-					</Switch>
-				</div>
-			)}
+			<div className="app">
+				<Switch>
+					<Route path="/dashboard">
+						<Header />
+						<Sidebar />
+						<Main />
+					</Route>
+					<Route path="/logins">
+						<Login />
+					</Route>
+					<Route path="/">
+						<Header />
+						<Sidebar />
+					</Route>
+				</Switch>
+			</div>
 		</Router>
 	);
 }

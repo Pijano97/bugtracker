@@ -67,3 +67,7 @@
 .test {
 	cursor: pointer;
 }
+
+.header__icon {
+	cursor: pointer;
+}

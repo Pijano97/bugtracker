@@ -1,0 +1,17 @@
+.dropdownitem {
+	width: 225px;
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+	padding: 11px 20px;
+}
+
+.dropdownitem__icon {
+	font-size: 20px;
+	margin-right: 15px;
+}
+
+.dropdownitem__title {
+	font-weight: 400;
+	text-transform: capitalize;
+}
