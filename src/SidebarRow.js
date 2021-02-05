@@ -1,10 +1,13 @@
 import React from "react";
 import "./SidebarRow.css";
 
-function SidebarRow({ title }) {
+function SidebarRow({ title, Icon }) {
+	// const Icon = icon;
+
 	return (
 		<div className="sidebarRow">
-			<h2>{title}</h2>
+			<Icon className="sidebarRow__icon" />
+			<p>{title}</p>
 		</div>
 	);
 }

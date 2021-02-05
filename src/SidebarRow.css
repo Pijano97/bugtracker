@@ -1,4 +1,18 @@
 .sidebarRow {
+	color: #b7c0cd;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.sidebarRow > p {
+	font-size: 14px;
+	font-weight: 200;
+	line-height: 1.5;
+	text-transform: capitalize;
+}
+
+.sidebarRow__icon {
+	padding-right: 7px;
+	padding-left: 4px;
 }

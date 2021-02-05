@@ -48,6 +48,10 @@
 	align-items: center;
 }
 
+.header__login {
+	cursor: pointer;
+}
+
 .header__notification > * {
 	margin: 0 20px;
 }
@@ -58,4 +62,8 @@
 
 .header__notificationIcon {
 	transform: scale(0.9);
+}
+
+.test {
+	cursor: pointer;
 }
