@@ -27,7 +27,11 @@ function Header() {
 				<p>BUGTRACKER</p>
 			</div>
 			<div className="header__right">
-				<div className="header__search">search icon?</div>
+				<div className="header__search">
+					<p>
+						Logged in as: <span>Admin</span>
+					</p>
+				</div>
 				<div className="header__notification">
 					<NotificationsOutlinedIcon className="header__notificationIcon" />
 					<ChatBubbleOutlineIcon className="header__chatIcon" />

@@ -37,8 +37,15 @@
 
 .header__search {
 	margin-left: 45px;
-
 	flex: 1;
+}
+
+.header__search > p {
+	font-weight: 200;
+}
+
+.header__search > p > span {
+	font-weight: 700;
 }
 
 .header__notification {
