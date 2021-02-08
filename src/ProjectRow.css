@@ -1,0 +1,33 @@
+.projectrow {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+	width: 95%;
+	margin-left: 15px;
+	border-bottom: 1px solid whitesmoke;
+	font-weight: 200;
+	font-size: 14px;
+}
+
+.projectrow__name {
+	flex: 1;
+}
+
+.projectrow__desc {
+	flex: 2;
+}
+
+.projectrow__time {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	flex: 1;
+}
+
+.projectrow__time > a {
+	text-decoration: dotted;
+	color: black;
+	width: 100%;
+	cursor: pointer;
+}

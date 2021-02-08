@@ -1,0 +1,14 @@
+.project {
+	display: flex;
+	margin-left: 250px;
+	width: calc(100%-250px);
+	height: 100%;
+	margin-top: 70px;
+	margin-left: 250px;
+	position: relative;
+}
+
+.project > button {
+	background-color: red;
+	cursor: pointer;
+}

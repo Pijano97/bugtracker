@@ -100,31 +100,49 @@
 	flex: 1;
 }
 
-.createproject__assign {
-	margin-top: 50px;
-	margin-left: 5px;
+.createproject__down {
+	margin-top: 45px;
 	display: flex;
 	width: 97%;
-	align-items: center;
 }
 
-.createproject__assignLeft {
+.createproject__downLeft {
+	height: 330px;
 	flex: 1;
 }
 
-.createproject__assignLeft > * {
-	margin-left: 10px;
+.createproject__downRight {
+	height: 330px;
+	flex: 1;
 }
 
-.createproject__assignRight {
-	height: 100%;
-	flex: 1;
+.createproject__usersAssign {
+	justify-content: space-between;
+	display: flex;
 }
 
 .createproject__users {
-	margin-left: 10px;
+	flex: 1;
+	margin-left: 35px;
 }
 
-.createproject__assigned {
+.createproject__users > select {
+	margin-top: 10px;
+	margin-left: 15px;
+}
+
+.createproject__role {
+	margin-left: 35px;
+	flex: 1;
+}
+
+.createproject__role > select {
+	margin-top: 10px;
+	margin-left: 15px;
+}
+
+.createproject__addButton {
+	width: 95%;
+	margin-top: 60px;
 	margin-left: 15px;
 }

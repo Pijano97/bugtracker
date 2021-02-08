@@ -11,6 +11,8 @@ import { auth } from "./firebase";
 import RoleAssigment from "./RoleAssigment";
 import MyProjects from "./MyProjects";
 import CreateProject from "./CreateProject";
+import CreateProjectAssign from "./CreateProjectAssign";
+import Project from "./Project";
 
 function App() {
 	const user = useSelector(selectUser);
@@ -54,6 +56,11 @@ function App() {
 						<Header />
 						<Sidebar />
 						<CreateProject />
+					</Route>
+					<Route path="/project">
+						<Header />
+						<Sidebar />
+						<Project />
 					</Route>
 					<Route path="/logins">
 						<Login />

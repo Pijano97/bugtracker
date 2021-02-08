@@ -23,8 +23,6 @@ function CreateProject() {
 	};
 
 	const makeProject = (e) => {
-		e.preventDefault();
-
 		db.collection("projects").add({
 			projectName: projectName,
 			projectDesc: projectDesc,
@@ -82,8 +80,8 @@ function CreateProject() {
 						</div>
 					</div>
 				</div>
-				<div className="createproject__assign">
-					<div className="createproject__assignLeft">
+				<div className="createproject__down">
+					<div className="createproject__downLeft">
 						<div className="createproject__subhead">
 							{/* <h3>Your Projects</h3> */}
 							<p>Assign Personnal</p>
@@ -91,17 +89,10 @@ function CreateProject() {
 								<p>Add Users</p>
 							</div>
 						</div>
-						{/* <input className="myprojects__search" placeholder="Search" /> */}
-						<div className="createproject__users">
-							<input className="myprojects__search" placeholder="Search" />
-							<div className="myprojects__label">
-								<p className="myprojects__name">Name</p>
-								<p className="myprojects__desc">Description</p>
-								<p className="myprojects__settings">settings</p>
-							</div>
-							<div className="roleassigment__users">
+						<div className="createproject__usersAssign">
+							<div className="createproject__users">
 								<p>Select 1 or more Users</p>
-								<select multiple onChange={handleChangeUsers}>
+								<select onChange={handleChangeUsers}>
 									{users.map(
 										({
 											id,
@@ -112,7 +103,7 @@ function CreateProject() {
 									)}
 								</select>
 							</div>
-							<div className="roleassigment__assign">
+							<div className="createproject__role">
 								<p>Select the Role to assign</p>
 								<select value={role} onChange={handleChange}>
 									<option value="" disabled selected hidden>
@@ -124,39 +115,19 @@ function CreateProject() {
 									<option value="Demo_Admin">Demo_Admin</option>
 									<option value="Project Manager">Project Manager</option>
 								</select>
-								<button onClick={makeProject}> SUBMIT </button>
 							</div>
 						</div>
+						<button className="createproject__addButton"> ADD </button>
 					</div>
-					<div className="createproject__assignRight">
+					<div className="createproject__downRight">
 						<div className="createproject__subhead">
 							{/* <h3>Your Projects</h3> */}
 							<p>Assigned Personnal</p>
 							<div className="createproject__link">
 								<p>Current Users on this Project</p>
 							</div>
+							<button onClick={() => makeProject()}> Create Project </button>
 						</div>
-						<div className="createproject__assigned">
-							<input className="myprojects__search" placeholder="Search" />
-							<div className="myprojects__label">
-								<p className="myprojects__name">Name</p>
-								<p className="myprojects__desc">Description</p>
-								<p className="myprojects__settings">settings</p>
-							</div>
-						</div>
-						{users.map(
-							({
-								data: { email, firstName, lastName, role, timestamp, projects },
-							}) => (
-								<UserRow
-									email={email}
-									firstName={firstName}
-									lastName={lastName}
-									role={role}
-									time="0"
-								/>
-							)
-						)}
 					</div>
 				</div>
 			</div>
