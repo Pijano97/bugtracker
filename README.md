@@ -16,3 +16,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 - Add Error on submit Manage User Roles submit
 - Add Search func on Manage User Roles
 - Color fix?
+- Fix CreateProject
+- Fix Edit Project
+
+Next step: Preview of Projects
