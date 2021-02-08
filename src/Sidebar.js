@@ -29,7 +29,7 @@ function Sidebar() {
 				<div
 					onClick={() => {
 						setSelected("home");
-						history.push("ManageRoleAssigment");
+						history.push("manageRoleAssigment");
 					}}
 					className={selected === "home" ? "sidebar__selected" : ""}
 				>

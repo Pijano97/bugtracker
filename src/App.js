@@ -8,6 +8,8 @@ import Login from "./Login";
 import { useDispatch, useSelector } from "react-redux";
 import { login, selectUser } from "./features/userSlice";
 import { auth } from "./firebase";
+import RoleAssigment from "./RoleAssigment";
+import MyProjects from "./MyProjects";
 
 function App() {
 	const user = useSelector(selectUser);
@@ -36,6 +38,16 @@ function App() {
 						<Header />
 						<Sidebar />
 						<Main />
+					</Route>
+					<Route path="/manageRoleAssigment">
+						<Header />
+						<Sidebar />
+						<RoleAssigment />
+					</Route>
+					<Route path="/myProjects">
+						<Header />
+						<Sidebar />
+						<MyProjects />
 					</Route>
 					<Route path="/logins">
 						<Login />

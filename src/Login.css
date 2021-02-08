@@ -42,6 +42,17 @@
 	font-size: 12px;
 }
 
+.login__name {
+	display: flex;
+}
+
+.login__name > input {
+	height: 30px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	width: 98%;
+}
+
 .login__signInButton {
 	background: #42a5f5;
 	border-radius: 2px;

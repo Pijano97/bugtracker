@@ -1,0 +1,33 @@
+.userrow {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 25px;
+	width: 95%;
+	margin-left: 15px;
+	border-bottom: 1px solid whitesmoke;
+	font-weight: 200;
+	font-size: 14px;
+}
+
+.userrow__name {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	font-size: 16px;
+}
+
+#firstname {
+}
+
+.userrow__name:first-child {
+}
+
+.userrow__email {
+	font-size: 16px;
+	flex: 2;
+}
+
+.userrow__role {
+	flex: 1;
+}

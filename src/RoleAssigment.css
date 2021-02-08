@@ -1,0 +1,71 @@
+.roleassigment {
+	display: flex;
+	margin-left: 250px;
+	width: calc(100%-250px);
+	height: 100%;
+	margin-top: 100px;
+	margin-left: 275px;
+	position: relative;
+	flex-direction: column;
+}
+
+.roleassigment__title {
+	display: flex;
+	flex: 0 0 100%;
+}
+
+.roleassigment__down {
+	display: flex;
+	margin-top: 45px;
+}
+
+.roleassigment__left {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.roleassigment__users {
+	border-bottom: 1px solid #ccc;
+}
+
+.roleassigment__users > p {
+	margin-bottom: 10px;
+}
+
+.roleassigment__users > select {
+	width: 250px;
+	height: 80px;
+	margin-bottom: 15px;
+}
+
+.roleassigment__assign {
+	margin-top: 25px;
+}
+
+.roleassigment__assign > button {
+	display: block;
+	width: 250px;
+	padding: 10px;
+	background-color: darkgrey;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+}
+
+.roleassigment__assign > p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.roleassigment__assign > select {
+	margin-bottom: 15px;
+	width: 250px;
+}
+
+.roleassigment__right {
+	height: 450px;
+	margin-left: 20px;
+	display: flex;
+	flex: 2;
+}
