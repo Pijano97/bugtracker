@@ -1,0 +1,130 @@
+.createproject {
+	display: flex;
+	margin-left: 250px;
+	width: calc(100%-250px);
+	height: 100%;
+	margin-top: 70px;
+	margin-left: 250px;
+	position: relative;
+}
+
+.createproject__container {
+	margin-left: 40px;
+	margin-top: 55px;
+	width: 92%;
+	height: 550px;
+	background-color: #fff;
+	border-radius: 3px;
+	box-shadow: 0 2px 4px 4px rgb(43 43 43 / 10%);
+}
+
+.createproject__details {
+	padding-bottom: 20px;
+	border-bottom: 1px solid whitesmoke;
+}
+
+.createproject__header {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 95%;
+	margin-left: 15px;
+	height: 60px;
+	position: relative;
+	bottom: 20px;
+	color: #fff;
+	background: #42a5f5;
+	border-radius: 2px;
+}
+
+.createproject__subhead {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 95%;
+	margin-left: 15px;
+	margin-top: 30px;
+	height: 60px;
+	position: relative;
+	bottom: 55px;
+	color: #fff;
+	background: #42a5f5;
+	border-radius: 2px;
+}
+
+.createproject__subhead > p {
+	margin-left: 10px;
+}
+
+.createproject__link {
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.createproject__link > a {
+	cursor: pointer;
+	border-bottom: 1px solid #fff;
+}
+
+.createproject__link > :first-child {
+	margin-right: 10px;
+}
+
+.createproject__header > p {
+	margin-left: 10px;
+}
+
+.createproject__label {
+	width: 95%;
+	margin-left: 35px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.createproject__name > input {
+	margin-top: 10px;
+	margin-left: 15px;
+}
+
+.createproject__desc > input {
+	margin-top: 10px;
+	margin-left: 15px;
+}
+
+.createproject__name {
+	flex: 1;
+}
+.createproject__desc {
+	flex: 1;
+}
+
+.createproject__assign {
+	margin-top: 50px;
+	margin-left: 5px;
+	display: flex;
+	width: 97%;
+	align-items: center;
+}
+
+.createproject__assignLeft {
+	flex: 1;
+}
+
+.createproject__assignLeft > * {
+	margin-left: 10px;
+}
+
+.createproject__assignRight {
+	height: 100%;
+	flex: 1;
+}
+
+.createproject__users {
+	margin-left: 10px;
+}
+
+.createproject__assigned {
+	margin-left: 15px;
+}

@@ -10,6 +10,7 @@ import { login, selectUser } from "./features/userSlice";
 import { auth } from "./firebase";
 import RoleAssigment from "./RoleAssigment";
 import MyProjects from "./MyProjects";
+import CreateProject from "./CreateProject";
 
 function App() {
 	const user = useSelector(selectUser);
@@ -48,6 +49,11 @@ function App() {
 						<Header />
 						<Sidebar />
 						<MyProjects />
+					</Route>
+					<Route path="/createProject">
+						<Header />
+						<Sidebar />
+						<CreateProject />
 					</Route>
 					<Route path="/logins">
 						<Login />

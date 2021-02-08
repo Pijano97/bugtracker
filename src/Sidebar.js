@@ -8,10 +8,13 @@ import BugReportIcon from "@material-ui/icons/BugReport";
 import PersonIcon from "@material-ui/icons/Person";
 import SidebarRow from "./SidebarRow";
 import { useHistory } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { selectUser } from "./features/userSlice";
 
 function Sidebar() {
 	const [selected, setSelected] = useState("dashboard");
 	const history = useHistory();
+	const user = useSelector(selectUser);
 
 	return (
 		<div className="sidebar">
@@ -29,7 +32,9 @@ function Sidebar() {
 				<div
 					onClick={() => {
 						setSelected("home");
-						history.push("manageRoleAssigment");
+						user
+							? history.push("manageRoleAssigment")
+							: history.push("/logins");
 					}}
 					className={selected === "home" ? "sidebar__selected" : ""}
 				>
@@ -38,7 +43,7 @@ function Sidebar() {
 				<div
 					onClick={() => {
 						setSelected("mpu");
-						history.push("manageProjectUsers");
+						user ? history.push("manageProjectUsers") : history.push("/logins");
 					}}
 					className={selected === "mpu" ? "sidebar__selected" : ""}
 				>
@@ -47,7 +52,7 @@ function Sidebar() {
 				<div
 					onClick={() => {
 						setSelected("mp");
-						history.push("myProjects");
+						user ? history.push("myProjects") : history.push("/logins");
 					}}
 					className={selected === "mp" ? "sidebar__selected" : ""}
 				>
@@ -56,7 +61,7 @@ function Sidebar() {
 				<div
 					onClick={() => {
 						setSelected("mt");
-						history.push("myTickets");
+						user ? history.push("myTickets") : history.push("/logins");
 					}}
 					className={selected === "mt" ? "sidebar__selected" : ""}
 				>
@@ -65,7 +70,7 @@ function Sidebar() {
 				<div
 					onClick={() => {
 						setSelected("up");
-						history.push("userProfile");
+						user ? history.push("userProfile") : history.push("/logins");
 					}}
 					className={selected === "up" ? "sidebar__selected" : ""}
 				>

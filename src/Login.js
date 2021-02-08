@@ -38,6 +38,7 @@ function Login() {
 			lastName: lastName,
 			email: email,
 			role: "N/A",
+			projects: null,
 			timestamp: firebase.firestore.FieldValue.serverTimestamp(),
 		});
 		auth
