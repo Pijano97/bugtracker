@@ -28,9 +28,6 @@ function CreateProject() {
 			projectDesc: projectDesc,
 			timestamp: firebase.firestore.FieldValue.serverTimestamp(),
 		});
-		db.collection("users").doc(id).update({
-			projects: projectName,
-		});
 
 		history.push("/myProjects");
 	};
@@ -82,53 +79,29 @@ function CreateProject() {
 				</div>
 				<div className="createproject__down">
 					<div className="createproject__downLeft">
-						<div className="createproject__subhead">
-							{/* <h3>Your Projects</h3> */}
-							<p>Assign Personnal</p>
-							<div className="createproject__link">
-								<p>Add Users</p>
-							</div>
-						</div>
-						<div className="createproject__usersAssign">
-							<div className="createproject__users">
-								<p>Select 1 or more Users</p>
-								<select onChange={handleChangeUsers}>
-									{users.map(
-										({
-											id,
-											data: { email, firstName, lastName, role, timestamp },
-										}) => (
-											<option value={id}>{`${firstName} ${lastName}`}</option>
-										)
-									)}
-								</select>
-							</div>
-							<div className="createproject__role">
-								<p>Select the Role to assign</p>
-								<select value={role} onChange={handleChange}>
-									<option value="" disabled selected hidden>
-										--Select Role/None --
-									</option>
-									<option value="N/A">N/A</option>
-									<option value="Admin">Admin</option>
-									<option value="Developer">Developer</option>
-									<option value="Demo_Admin">Demo_Admin</option>
-									<option value="Project Manager">Project Manager</option>
-								</select>
-							</div>
-						</div>
-						<button className="createproject__addButton"> ADD </button>
+						<p>Start Date</p>
+						<input type="date" />
 					</div>
 					<div className="createproject__downRight">
-						<div className="createproject__subhead">
-							{/* <h3>Your Projects</h3> */}
-							<p>Assigned Personnal</p>
-							<div className="createproject__link">
-								<p>Current Users on this Project</p>
-							</div>
-							<button onClick={() => makeProject()}> Create Project </button>
-						</div>
+						<p>End Date</p>
+						<input type="date" />
 					</div>
+				</div>
+				<div className="createproject__footer">
+					<div className="createproject__subhead">
+						{/* <h3>Your Projects</h3> */}
+						<p>Write here project overview</p>
+					</div>
+					<textarea type="textarea"></textarea>
+					<button className="createproject_button createproject__buttonCacnel">
+						CANCEL
+					</button>
+					<button
+						onClick={makeProject}
+						className="createproject_button createproject__buttonNext"
+					>
+						NEXT
+					</button>
 				</div>
 			</div>
 		</div>

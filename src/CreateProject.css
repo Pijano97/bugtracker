@@ -4,15 +4,14 @@
 	width: calc(100%-250px);
 	height: 100%;
 	margin-top: 70px;
-	margin-left: 250px;
 	position: relative;
 }
-
 .createproject__container {
+	overflow: hidden;
+
 	margin-left: 40px;
 	margin-top: 55px;
-	width: 92%;
-	height: 550px;
+	width: 90%;
 	background-color: #fff;
 	border-radius: 3px;
 	box-shadow: 0 2px 4px 4px rgb(43 43 43 / 10%);
@@ -43,10 +42,9 @@
 	flex-direction: column;
 	width: 95%;
 	margin-left: 15px;
-	margin-top: 30px;
+	margin-top: 20px;
 	height: 60px;
 	position: relative;
-	bottom: 55px;
 	color: #fff;
 	background: #42a5f5;
 	border-radius: 2px;
@@ -54,6 +52,19 @@
 
 .createproject__subhead > p {
 	margin-left: 10px;
+}
+
+.createproject__footer {
+	height: 200px;
+}
+
+.createproject__footer > textarea {
+	padding: 10px;
+	letter-spacing: 1px;
+	margin-left: 15px;
+	margin-top: 12px;
+	width: 93.5%;
+	height: 120px;
 }
 
 .createproject__link {
@@ -101,22 +112,33 @@
 }
 
 .createproject__down {
-	margin-top: 45px;
+	margin-top: 15px;
 	display: flex;
 	width: 97%;
+	border-bottom: 1px solid whitesmoke;
+	padding-bottom: 15px;
 }
 
 .createproject__downLeft {
-	height: 330px;
+	margin-left: 30px;
 	flex: 1;
 }
 
+.createproject__downLeft > input {
+	margin-left: 15px;
+	margin-top: 10px;
+}
 .createproject__downRight {
-	height: 330px;
+	margin-left: 30px;
 	flex: 1;
 }
 
-.createproject__usersAssign {
+.createproject__downRight > input {
+	margin-left: 15px;
+	margin-top: 10px;
+}
+
+.cre .createproject__usersAssign {
 	justify-content: space-between;
 	display: flex;
 }
@@ -145,4 +167,21 @@
 	width: 95%;
 	margin-top: 60px;
 	margin-left: 15px;
+}
+
+.createproject_button {
+	padding: 10px;
+	width: 150px;
+	margin-bottom: 10px;
+}
+
+.createproject__buttonCacnel {
+	margin-top: 7px;
+	margin-left: 15px;
+}
+
+.createproject__buttonNext {
+	float: right;
+	margin-right: 28px;
+	margin-top: 7px;
 }
